@@ -1,0 +1,92 @@
+# Unity Generated
+Library/
+Temp/
+obj/
+Logs/
+UserSettings/
+MemoryCaptures/
+
+# Visual Studio / MonoDevelop
+.vs/
+.vscode/
+.idea/
+*.csproj
+*.sln
+*.user
+*.VC.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+*.exe
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# NuGet
+*.nuget.props
+*.nuget.targets
+*.nupkg
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Rider
+.idea/
+.idea_modules/
+*.sln.iml
+riderModule.iml
+
+# Package cache
+Packages/
+Package/
+
+# Backup files
+*.backup
+*.bak
+*.swp
+
+# Compiled binaries
+*.so
+*.o
+*.lo
+*.la
+*.lai
+*.lib
+*.dll
+*.dylib
+*.exe
+
+# Precompiled headers
+*.gch
+*.pch
+
+# Misc
+*.log
+*.pidb
+*.mdb
+.vscode/
+.vs/
+.idea/
+*.DotSettings
+*.DotSettings.user
