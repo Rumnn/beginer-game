@@ -7,6 +7,7 @@ public class Obstacle : MonoBehaviour
     public float minSpeed = 50f;
     public float maxSpeed = 150f;
     public float maxSpinSpeed = 10f;
+    public float maxAllowedSpeed = 10f; // Tốc độ tối đa cho phép trước khi tạo hiệu ứng va chạm
 
     [SerializeField] private GameObject bounceEffectPrefab;
     Rigidbody2D rb;
@@ -22,6 +23,16 @@ public class Obstacle : MonoBehaviour
         rb.AddForce(randomDirection * randomSpeed);
 
         rb.AddTorque(Random.Range(-maxSpinSpeed, maxSpinSpeed));
+    }
+
+    void FixedUpdate()
+    {
+        // Kiểm tra nếu tốc độ hiện tại vượt quá giới hạn
+        if (rb.linearVelocity.magnitude > maxAllowedSpeed)
+        {
+            // Ép tốc độ quay về mức tối đa nhưng vẫn giữ nguyên hướng bay
+            rb.linearVelocity = rb.linearVelocity.normalized * maxAllowedSpeed;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)

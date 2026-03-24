@@ -56,6 +56,7 @@ public class UIManager : MonoBehaviour
     public void ShowGameOverUI()
     {
         if (restartButton != null) restartButton.style.display = DisplayStyle.Flex;
+        
     }
 
     void UpdateHighScoreDisplay()
@@ -73,4 +74,5 @@ public class UIManager : MonoBehaviour
     {
         throw new NotImplementedException();
     }
+    
 }
